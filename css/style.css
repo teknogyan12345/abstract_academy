@@ -475,7 +475,7 @@ footer .col-wrapper .col a.yellow:hover {
 /* Media Queries */
 @media (max-width: 768px) {
   nav {
-    /* position: static; */
+    
   }
   .menu {
     position: absolute;
@@ -494,12 +494,12 @@ footer .col-wrapper .col a.yellow:hover {
     justify-content: center;
     flex-direction: column;
     margin-top: 10px;
-    gap: 60px;
+    gap: 2.2rem;
     font-size: 2rem;
     font-weight: 500;
   }
   .menu ul li {
-    width: 90vw;
+    width: 70vw;
     text-align: center;
     border-top: rgba(0, 0, 0, 0.15) solid 1px;
     border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
@@ -517,11 +517,12 @@ footer .col-wrapper .col a.yellow:hover {
   .menu-close.active {
     display: block;
   }
-
   .showcase {
-    height: 80vh;
+    height: 110vh;
   }
   .showcase h2 {
+    margin-top: 2.2rem;
+    padding: 0 5px;
     margin-bottom: 1.6rem;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -529,12 +530,13 @@ footer .col-wrapper .col a.yellow:hover {
 
   .showcase p {
     margin-bottom: 1.6rem;
-
-    width: 80%;
+    padding: 0 1rem;
+    width: 100%;
     color: #fff;
     font-size: 0.9rem;
     line-height: 25px;
   }
+
   #experts .experts-wrapper {
     display: flex;
     flex-direction: column;

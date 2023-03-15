@@ -1,3 +1,4 @@
+alert("Site under construction. Launches on 22 March. Stay Safe and Healthy")
 const menuBar = document.querySelector(".menu-bar");
 const menuClose = document.querySelector(".menu-close");
 const menu = document.querySelector(".menu");
