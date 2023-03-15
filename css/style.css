@@ -475,7 +475,7 @@ footer .col-wrapper .col a.yellow:hover {
 /* Media Queries */
 @media (max-width: 768px) {
   nav {
-    position: static;
+    /* position: static; */
   }
   .menu {
     position: absolute;
