@@ -646,14 +646,3 @@ background-color: rgba(223, 230, 223, 1)
 
 
 }
-
-.under-construction img {
-  z-index: 100;
-  opacity: 60%;
-  position: fixed;
-  top: 20%;
-  right: 50%;
-  transform: translate(50%);
-  width: 50vw;
-  height: 50vh;
-}
