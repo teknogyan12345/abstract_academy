@@ -555,7 +555,7 @@ background-color: rgba(223, 230, 223, 1)
     justify-content: center;
     flex-direction: column;
     margin-top: 10px;
-    gap: 2.2rem;
+    gap: 3rem;
     font-size: 2rem;
     font-weight: 500;
   }
