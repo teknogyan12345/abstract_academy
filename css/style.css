@@ -496,9 +496,9 @@ background-color: rgba(223, 230, 223, 1)
   position: relative;
   width: 100%;
   gap: 2rem;
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contact iframe {
@@ -522,7 +522,7 @@ background-color: rgba(223, 230, 223, 1)
 }
 
 .contact-info .info-box i {
-  margin-right: 40px;
+  margin-right: 0.8rem;
   font-size: 20px;
 }
 
@@ -537,9 +537,7 @@ background-color: rgba(223, 230, 223, 1)
 
 /* Media Queries */
 @media (max-width: 768px) {
-  nav {
-    
-  }
+
   .menu {
     position: absolute;
     display: flex;
@@ -639,14 +637,18 @@ background-color: rgba(223, 230, 223, 1)
   }
 
   .contact {
+    margin: 1rem;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
-  .contact-info {
+  .contact-info, .map div {
     width: 80vw;
-  
   }
 
+  .contact-info{
+    transform: translateX(-7%)
+  }
 
 }
