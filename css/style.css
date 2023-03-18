@@ -653,3 +653,15 @@ background-color: rgba(223, 230, 223, 1)
   }
 
 }
+
+nav, .showcase, #features, #courses, #registration, #experts, footer {
+  display: none;
+}
+.maintenance {
+  background: url('../images/under-construction.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+}
