@@ -610,6 +610,10 @@ background-color: rgba(223, 230, 223, 1)
     flex-direction: column;
   }
 
+  #features .feature-wrapper h3 {
+    text-transform: uppercase;
+  }
+
   #courses .courses-wrapper {
     grid-template-columns: 1fr;
     gap: 40px;
