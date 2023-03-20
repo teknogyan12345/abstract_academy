@@ -175,6 +175,10 @@ nav .menu a:hover {
   gap: 20px;
 }
 
+#features > p {
+  font-size: 1.6rem;
+}
+
 #features .feature {
   background-color: #f9f9ff;
   position: relative;
@@ -354,6 +358,8 @@ nav .menu a:hover {
 #experts .experts-wrapper .expert img {
   border: 10px solid #f8ecf8;
   border-radius: 50%;
+  width: 128px;
+  height: auto;
 }
 #experts .experts-wrapper .social-media i {
   padding: 5px;
