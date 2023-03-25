@@ -452,7 +452,7 @@ footer .col-wrapper .col a.yellow:hover {
 /* Courses Page */
 
 .courses {
-  width: 90vw;
+  width: 100%;
   margin-left: 50%;
   transform: translate(-50%);
   text-align: center;
@@ -485,9 +485,14 @@ footer .col-wrapper .col a.yellow:hover {
 
 .course-details .course-detail-text {
   display: flex;
+  gap: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.course-details .course-detail-text h4 {
+  /* margin-bottom: 2rem; */
 }
 
 .course-details img {
@@ -495,7 +500,7 @@ footer .col-wrapper .col a.yellow:hover {
 }
 
 .course-details p {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 /* Blog */
