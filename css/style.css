@@ -7,7 +7,6 @@
 }
 html {
   overflow-x: hidden;
-
 }
 
 body {
@@ -102,8 +101,8 @@ nav .menu a:hover {
 /* Showcase */
 
 .showcase {
-  background: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
-    url("/images/back.jpg");
+  background: linear-gradient(rgba(9, 5, 54, 0.2), rgba(5, 4, 46, 0.7)),
+    url("/images/bg2.jpg");
   width: 100%;
   height: 100vh;
   padding-top: 40px;
@@ -302,7 +301,19 @@ nav .menu a:hover {
   font-weight: 600;
 }
 
-#registration .form {
+/* Query */
+
+.query {
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  margin: 80px auto 20px;
+  background-color: rgb(21, 21, 100);
+}
+
+.query .form {
+  width: 40vw;
+  margin: 0 auto;
   background-color: #fff;
   border-radius: 8px;
   display: flex;
@@ -311,20 +322,20 @@ nav .menu a:hover {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
-#registration .form input {
+.query .form input {
   margin: 15px 0;
   padding: 15px 10px;
   border: 1px solid rgb(84, 40, 241);
   outline: none;
 }
 
-#registration .form input::placeholder {
+.query .form input::placeholder {
   color: #413c3c;
   font-weight: 500;
   font-size: 0.9rem;
 }
 
-#registration .form a.yellow {
+.query .form a.yellow {
   text-align: center;
   display: inline-block;
   margin-top: 10px;
@@ -337,7 +348,7 @@ nav .menu a:hover {
   transition: 0.3s ease;
 }
 
-#registration .form a.yellow:hover {
+.query .form a.yellow:hover {
   color: rgb(21, 21, 100);
   background: #fff;
 }
@@ -355,25 +366,25 @@ nav .menu a:hover {
   justify-content: space-around;
 }
 
-#experts .experts-wrapper .expert img {
+ .experts-wrapper .expert img {
   border: 10px solid #f8ecf8;
   border-radius: 50%;
   width: 128px;
   height: auto;
 }
-#experts .experts-wrapper .social-media i {
+ .experts-wrapper .social-media i {
   padding: 5px;
   border: 1px solid rgb(21, 21, 100);
   cursor: pointer;
 }
 
-#experts .experts-wrapper .social-media i:hover {
+.experts-wrapper .social-media i:hover {
   background-color: rgb(21, 21, 100);
   color: #fff;
   transition: 0.3s ease;
 }
 
-#experts .experts-wrapper .expert {
+ .experts-wrapper .expert {
   background-color: #fafaf1;
   padding: 30px 20px;
 }
@@ -452,7 +463,7 @@ footer .col-wrapper .col a.yellow:hover {
 .course .course-details {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: #fafaf1;
   gap: 2rem;
   text-align: start;
@@ -464,25 +475,32 @@ footer .col-wrapper .col a.yellow:hover {
 }
 .courses .course img {
   width: 40%;
+  border-radius: 5px;
 }
 
 .course-details .highlights {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin-bottom: 2rem;
 }
+
+.course-details .highlights li {
+  list-style: disc;
+}
 .course-details .highlights .highlight {
+  color: #413c3c;
+  border-radius: 10px;
   margin-top: 2rem;
-  border-right: rgba(9, 5, 54, 0.3) solid 2px;
-  padding: 10px 30px 10px 10px;
-  text-align: center;
+  padding: 5px;
+  text-align: start;
 }
 
 /* Blog */
 .blog {
   margin: 0 0.8rem;
-padding: 2rem;
-background-color: rgba(223, 230, 223, 1)
+  padding: 2rem;
+  background-color: rgba(31, 38, 135, 0.25)
 }
 
 .blog .item {
@@ -512,7 +530,6 @@ background-color: rgba(223, 230, 223, 1)
   width: 350px;
   background: #f2f2f2;
   padding: 60px 40px 20px;
-
 }
 
 .contact-info .info-box {
@@ -526,12 +543,11 @@ background-color: rgba(223, 230, 223, 1)
   font-size: 20px;
 }
 
-
 .contact-info .details {
   color: #1b206e;
 }
 
-.contact-info .details a{
+.contact-info .details a {
   text-decoration: underline;
   color: #111;
 }
@@ -628,6 +644,11 @@ background-color: rgba(223, 230, 223, 1)
   #registration {
     flex-direction: column;
   }
+
+  .query .form {
+    width: 90vw;
+    text-align: center;
+  }
   footer .col-wrapper {
     flex-direction: column;
     align-items: center;
@@ -649,11 +670,11 @@ background-color: rgba(223, 230, 223, 1)
     width: 100%;
   }
 
-
   .contact-container {
     width: 100%;
     display: flex;
-    justify-content: center;  }
+    justify-content: center;
+  }
 
   .contact {
     flex-direction: column;
@@ -662,8 +683,8 @@ background-color: rgba(223, 230, 223, 1)
     padding: 1rem;
   }
 
-  .contact-info, .map-wrapper {
-
+  .contact-info,
+  .map-wrapper {
     margin: 10px;
     padding: 2rem;
     width: 100%;
