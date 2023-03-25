@@ -170,7 +170,8 @@ nav .menu a:hover {
 }
 
 #features .feature-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -370,7 +371,7 @@ nav .menu a:hover {
   border: 10px solid #f8ecf8;
   border-radius: 50%;
   width: 128px;
-  height: auto;
+  height: 128px;
 }
  .experts-wrapper .social-media i {
   padding: 5px;
@@ -630,6 +631,15 @@ footer .col-wrapper .col a.yellow:hover {
 
   #features .feature-wrapper {
     flex-direction: column;
+    grid-template-columns: 1fr;
+
+  }
+ 
+  
+
+
+  .feature ul li {
+     list-style: circle;
   }
 
   #features .feature-wrapper h3 {
@@ -708,3 +718,75 @@ footer .col-wrapper .col a.yellow:hover {
   height: 100vh;
 
 } */
+
+/* Swiper */
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .achievers {
+      margin: 80px 0 40px 0  ;
+    }
+
+    .swiper {
+      width: 100%;
+      height: aut0;
+      
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 40%;
+      height: auto;
+      /* object-fit: cover; */
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
