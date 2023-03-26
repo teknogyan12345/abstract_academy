@@ -459,12 +459,18 @@ footer .col-wrapper .col a.yellow:hover {
 }
 
 .courses h1 {
+  background-color: rgba(81, 91, 233, 0.6);
+  width: 60%;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 1rem;
   margin-bottom: 80px;
 }
 
 .courses .course {
   margin: 10px 0 50px;
   padding: 2rem;
+
 }
 
 .courses .course h2 {
@@ -473,11 +479,16 @@ footer .col-wrapper .col a.yellow:hover {
 }
 
 .course-details {
-  padding: 2rem;
-  border-radius: 5px;
-
-  background-color: rgba(99, 112, 168, 0.5);
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 50%;
+  background-color: rgba(99, 112, 168, 0.2);
+  box-shadow: 2px 10px 10px rgba(81, 91, 233, 0.17);
+  /* border: red 4px solid; */
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 4rem;
   justify-content: space-between;
   text-align: center;
@@ -485,6 +496,7 @@ footer .col-wrapper .col a.yellow:hover {
 
 .course-details .course-detail-text {
   display: flex;
+  padding: 2rem;
   gap: 2rem;
   flex-direction: column;
   align-items: center;
@@ -496,7 +508,8 @@ footer .col-wrapper .col a.yellow:hover {
 }
 
 .course-details img {
-  max-width: 40%;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .course-details p {
@@ -707,6 +720,7 @@ footer .col-wrapper .col a.yellow:hover {
     margin-top: 40px;
   }
   .courses h1 {
+    font-size: 2rem;
     margin-bottom: 20px 0;
   }
 
@@ -719,12 +733,15 @@ footer .col-wrapper .col a.yellow:hover {
   }
 
   .course-details {
+    gap: 1rem;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   .course-details .course-detail-text {
+    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -732,7 +749,7 @@ footer .col-wrapper .col a.yellow:hover {
   }
 
   .course-details img {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .contact-container {
