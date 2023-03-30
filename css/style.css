@@ -470,7 +470,6 @@ footer .col-wrapper .col a.yellow:hover {
 .courses .course {
   margin: 10px 0 50px;
   padding: 2rem;
-
 }
 
 .courses .course h2 {
@@ -570,6 +569,12 @@ footer .col-wrapper .col a.yellow:hover {
 .contact-info .details a {
   text-decoration: underline;
   color: #111;
+}
+
+footer p:last-child a {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 /* Utilities */
